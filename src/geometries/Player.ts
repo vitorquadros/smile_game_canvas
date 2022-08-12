@@ -19,7 +19,7 @@ export class Player extends Circ implements IPlayer {
     let dx = Math.abs(this.x - circleCompare.x);
     let dy = Math.abs(this.y - circleCompare.y);
     let distance = Math.sqrt(dx * dx + dy * dy);
-    let sumRadius = 20 + 20;
+    let sumRadius = this.radius + circleCompare.radius;
 
     if (distance <= sumRadius) return true;
     else return false;
