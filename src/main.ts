@@ -9,6 +9,8 @@ import { createPoints } from './utils/createPoints';
 let numberOfPoints: number = 1;
 // DEFINIR DE QUANTO EM QUANTO TEMPO SURGEM INIMIGOS (segundos)
 let enemyRate: number = 0.5;
+// DEFINIR VELOCIDADE DO PLAYER
+let playerSpeed: number = 10;
 // DEFINIR COR DO PLAYER
 let playerColor: string = 'red';
 // DEFINIR COR DO INIMIGO
@@ -23,7 +25,7 @@ let player = new Player(
   CANVAS.height / 2,
   20,
   playerColor,
-  10
+  playerSpeed
 );
 let keys: boolean[] = [];
 let enemies: Circ[] = [];
